@@ -4,8 +4,8 @@
 this should be fixed since RxLint 1.3, but I still get an error:
 
 ```java
-    public void testBehaviourSubjectSubscription(Observable<String> observable,
-                                                 Observer<String> observer) {
+    public void testRxLintIssue11(Observable<String> observable,
+                                  Observer<String> observer) {
         observable.subscribe(observer);
     }
 ```
