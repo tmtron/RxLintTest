@@ -14,10 +14,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    // this should not be an error anymore since RxLint 1.3??
-    // https://bitbucket.org/littlerobots/rxlint/issues/11
-    public void testBehaviourSubjectSubscription(Observable<String> observable,
-                                                 Observer<String> observer) {
+    /* https://bitbucket.org/littlerobots/rxlint/issues/11
+     * this still fails in RxLint 1.3
+     */
+    public void testRxLintIssue11(Observable<String> observable,
+                                  Observer<String> observer) {
         observable.subscribe(observer);
     }
 
